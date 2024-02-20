@@ -26,6 +26,10 @@ Route::get('/vue', function () {
   return view('vue');
 });
 
+Route::get('/sample', function () {
+  return "sample";
+});
+
 Route::get('/dashboard', function () {
   return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
